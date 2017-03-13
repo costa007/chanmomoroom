@@ -10,5 +10,5 @@
 
 ?>
 <div class="site-info">
-	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'chanmomoroom' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'chanmomoroom' ), 'WordPress' ); ?></a>
+	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'chanmomoroom' ) ); ?>"><?php printf( __( 'Copyright (C) 2017 %s. All Rights Reserved.', 'chanmomoroom'), 'chan_MoMo_room' ); ?></a>
 </div><!-- .site-info -->

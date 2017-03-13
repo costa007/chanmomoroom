@@ -18,6 +18,11 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="wrap">
+
+				<div class="foot-contact">
+					<img src="<?php bloginfo('template_url'); ?>/assets/images/footer_contact.png">
+				</div>
+
 				<?php
 				get_template_part( 'template-parts/footer/footer', 'widgets' );
 
@@ -35,9 +40,14 @@
 					</nav><!-- .social-navigation -->
 				<?php endif;
 
-				get_template_part( 'template-parts/footer/site', 'info' );
 				?>
 			</div><!-- .wrap -->
+			<div class="foot-info">
+				<?php 
+
+				get_template_part( 'template-parts/footer/site', 'info' );
+				?>
+			</div>
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->

@@ -51,8 +51,6 @@ function chanmomoroom_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	add_image_size( 'chanmomoroom-featured-image', 2000, 1200, true );
-
 	add_image_size( 'chanmomoroom-thumbnail-avatar', 100, 100, true );
 
 	// Set the default content width.
@@ -455,6 +453,8 @@ function chanmomoroom_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_style( 'chanmomoroom', get_theme_file_uri( '/assets/css/chanmomoroom.css' ), array( 'chanmomoroom-style' ), '1.0' );
 }
 add_action( 'wp_enqueue_scripts', 'chanmomoroom_scripts' );
 

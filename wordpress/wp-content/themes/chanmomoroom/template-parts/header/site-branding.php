@@ -12,8 +12,8 @@
 <div class="site-branding">
 	<div class="wrap">
 
+		<div class="chan-title">
 		<?php the_custom_logo(); ?>
-
 		<div class="site-branding-text">
 			<?php if ( is_front_page() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -30,6 +30,11 @@
 		<?php if ( ( chanmomoroom_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
 		<a href="#content" class="menu-scroll-down"><?php echo chanmomoroom_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'chanmomoroom' ); ?></span></a>
 	<?php endif; ?>
+		</div>
 
+		<div class="chan-contact">
+			<img src="<?php bloginfo('template_url'); ?>/assets/images/top_tele.png">
+		</div>
 	</div><!-- .wrap -->
+	
 </div><!-- .site-branding -->
