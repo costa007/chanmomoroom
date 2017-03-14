@@ -24,8 +24,9 @@ body {
 	margin: 0;
 	font-size: 12px;
 }
-.site-branding {
-	margin-bottom: 42px !important;
+.site-branding,
+.custom-header {
+	margin-bottom: 0 !important;
 	padding: 0;
 }
 .chan-title {
@@ -521,4 +522,64 @@ img.alignnone.size-full.wp-image-108 {
 }
 .chanmo-sched ul {
 	list-style: none;
+}
+
+/*======================RESPONSIVE=======================*/
+@media screen and (max-width: 767px) {
+	#top-menu li {
+		margin: 0 auto;
+	}
+	.custom-header {
+		height: 0 !important;
+	}
+/*	.navigation-top {
+		background-color: rgba(255,255,255,0.5);
+	}*/
+	/*------Top------*/
+	.wrap-top-message {
+		padding-top: 0.3em;
+	}
+	.points,
+	.flower-nail .news-box p {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.social-main {
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+	}
+	.social-main:last-child {
+		margin: 7% auto 0;
+	}
+	.social-media {
+		background-size: 100% 100%;
+	}
+	.widget {
+		padding-bottom: 0;
+	}
+
+	/*------About------*/
+	.about-content h1 {
+		width: 90%;
+		font-size: 1.3em;
+	}
+	.page-id-16 .chanmo-normal {
+		background-size: 100% 77%;
+		background-position-y: 87%;
+	}
+	.about-content p {
+		text-align: left;
+	}
+	.aboutbox-detail2 {
+		width: 42%;
+		margin-top: 7%;
+		height: auto;
+	}
+
+	/*------Menu------*/
+	.menu-content {
+		width: 90%;
+		margin: 0 auto;
+	}
 }

@@ -3376,7 +3376,7 @@ object {
 		font-size: 14px;
 		font-size: 0.875rem;
 		left: 0;
-		position: absolute;
+/*		position: absolute;*/
 		right: 0;
 		width: 100%;
 		z-index: 3;
@@ -3658,9 +3658,9 @@ object {
 	}
 
 	/* With panel images 100% of the screen height, we're going to fix the background image where supported to create a parallax-like effect. */
-	.background-fixed .panel-image {
+/*	.background-fixed .panel-image {
 		background-attachment: fixed;
-	}
+	}*/
 
 	.page-two-column .panel-content .entry-header {
 		float: left;
