@@ -20,7 +20,15 @@
 			<div class="wrap">
 
 				<div class="foot-contact">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/footer_contact.png">
+					<img src="<?php bloginfo('template_url'); ?>/assets/images/foot_titl_contact.png">
+				</div>
+
+				<div class="chanmo-sched">
+					<ul>
+						<li><?php echo get_option('address'); ?></li>
+						<li><?php echo get_option('workschedule'); ?></li>
+						<li><?php echo get_option('contact'); ?></li>
+					</ul>
 				</div>
 
 				<?php

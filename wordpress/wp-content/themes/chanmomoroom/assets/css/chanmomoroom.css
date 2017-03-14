@@ -70,14 +70,27 @@ header.entry-header h2 {
 .site-branding .wrap {
 	width: 100%;
 }
+#content .wrap,
 .panel-content .wrap {
 	max-width: 100%;
 	padding: 0px
 }
+.page:not(.home) #content {
+	padding: 0;
+}
+h1.entry-title {
+	display: none;
+}
+header.entry-header {
+	max-width: 1000px;
+	margin: 0 auto !important;
+}
 
 /*Top Page*/
 .points-content:after,
-.social-content:after {
+.social-content:after,
+.about-box:after,
+.flower-back:after {
 	content: "";
 	visibility: hidden;
 	display: block;
@@ -165,6 +178,291 @@ header.entry-header h2 {
 	margin: 0;
 }
 
+/*About Page*/
+.about-body {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.about-content {
+	padding: 0 50px;
+}
+.about-content h1 {
+	color: #4D4D4D;
+	background-color: #f7c9cb;
+	text-align: center;
+	width: 706px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	font-size: 29px;
+}
+.about-head-image {
+	width: 600px;
+	margin: 0 auto;
+}
+.about-content p {
+	margin-top: 35px;
+	text-align: center;
+}
+.about-box-content {
+	padding: 40px;
+	position: relative;
+}
+.aboutbox-image1 {
+	float: left;
+	width: 49%;
+	margin-right: 5%;
+}
+.aboutbox-detail1 {
+	float: right;
+	width: 45%;
+}
+.aboutbox-detail1 p {
+	margin-top: 31%;
+}
+.aboutbox-image2 {
+	float: right;
+	width: 57%;
+}
+.aboutbox-detail2 {
+	float: left;
+	width: 40%;
+	margin-top: 10%;
+	height: 160px;
+}
+.aboutbox-detail2 p {
+	float: right;
+}
+.aboutbox-image2 {
+	position: relative;
+}
+.aboutbox-image2 img {
+	position: absolute;
+	margin-top: -26%;
+}
+.page-id-16 .chanmo-normal {
+	background-image: url(../images/about_contentbg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position-y: 88%;
+}
+.page-id-16 .chanmo-normal:last-child {
+	background: none;
+}
+.flower-left {
+	float: left;
+}
+.flower-right {
+	float: right;
+}
+.flower-left, .flower-right {
+	width: 33%;
+}
+
+/*Menu Page*/
+.menu-header {
+	text-align: center;
+	position: relative;
+}
+.menu-header:before {
+	content: url(../images/dots-color2.png);
+	display: inline;
+	vertical-align: middle;
+	position: absolute;
+	/* float: left; */
+	left: 0;
+	top: 11%;
+}
+ .menu-header:after {
+	content: url(../images/dots-color2.png);
+	display: inline;
+	vertical-align: middle;
+	position: absolute;
+	/* float: left; */
+	right: 0;
+	top: 11%;
+ }
+.menu img {
+	display: inline;
+	width: 216px;
+}
+.menu-list {
+	text-align: left;
+	width: 310px;
+	margin: 3% auto;
+}
+.menu-list ul {
+	list-style: none;
+}
+.menu-list ul li {
+	line-height: 35px;
+}
+.menu-list ul li span {
+	float: right;
+}
+img.alignnone.size-full.wp-image-108 {
+	width: 128px;
+}
+.page-id-18 .flower-back,
+.page-id-22 .flower-back,
+.page-id-20 .flower-back {
+	margin-top: -14%;
+}
+
+/*Q^A Page*/
+.qa-content {
+	width: 575px;
+	margin: 0 auto;
+}
+.ques:after,
+.ans:after {
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.ques-head,
+.ans-head {
+	float: left;
+	width: 16%;
+	margin-right: 4%;
+}
+.ques-part,
+.ans-part {
+	float: right;
+	width: 80%;
+}
+.ques-head img,
+.ans-head img {
+	float: right;
+}
+.ans-part {
+	color: #EA7D7C;
+}
+.qa {
+	margin: 35px 0;
+}
+.ques-part p:after {
+	content: "";
+	border: 1px solid #848484;
+	display: block;
+	width: 240px;
+	margin: 30px auto;
+}
+.ans-head img {
+	width: 60px;
+}
+
+/*Access Page*/
+.access-content {
+	width: 700px;
+	margin: 0 auto;
+}
+.access h1 {
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+.access-heading {
+	width: 445px;
+	margin: 0 auto;
+}
+.access-detail {
+	margin-top: 35px;
+}
+.access-detail h2 {
+	text-align: center;
+	font-size: 22px;
+}
+.access-box ul {
+	list-style: none;
+}
+.access-box ul li {
+	text-align: center;
+	margin: 9px 0;
+	padding: 4px 0;
+}
+.access-box ul li:first-child, .access-box ul li:nth-child(3) {
+	background-color: #F6C2D7;
+}
+.access-box ul li:nth-child(2), .access-box ul li:last-child {
+	background-color: #FBE5EE;
+}
+.access-contact {
+	text-align: center;
+	width: 400px;
+	margin: 40px auto;
+}
+.map-brown {
+	height: 430px;
+	background-color: rgba(35,24,21,0.5);
+}
+
+/*Contact Page*/
+.contact-reminder {
+	width: 600px;
+	margin: 60px auto;
+	text-align: center;
+}
+.contact-reminder p {
+	line-height: 30px;
+}
+.chanmo-radio {
+	text-align: center;
+}
+.page-id-24 .chanmo-normal {
+	background-image: url(../images/contact_bg_bot.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.contact-main-content {
+	width: 590px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.contact-main-content table tr td:first-child {
+	vertical-align: top;
+}
+.contact-main-content table tr td:first-child label {
+	background-color: #F3AAAF;
+	padding: 11px;
+	color: #fff;
+	margin:0;
+}
+.contact-main-content table tr td:last-child {
+/*	padding: 0;*/
+}
+.contact-main-content table tr {
+	border: none;
+}
+.contact-main-content table tr td input,
+.contact-main-content table tr td textarea {
+	border: none;
+	border-radius: 0;
+}
+.contact-main-content table tr:last-child td:first-child label {
+	height: 261px;
+}
+.contact-main-content table tr:last-child th label span {
+	display: block;
+}
+.contact-main-content p {
+	text-align: center;
+}
+.contact-main-content p input[type="submit"] {
+	background-color: #87c5be;
+}
+.contact-bg-bot {
+	background: none !important;
+}
+.contact-bg-bot .flower-back {
+	margin-top: -21%;
+}
+#wpcf7-f127-p24-o1 > form > div.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+	text-align: center;
+}
+
+
 /*-----------------FOOTER-----------------*/
 .foot-contact {
 	width: 340px;
@@ -213,4 +511,14 @@ header.entry-header h2 {
 .site-info a:hover {
 	text-decoration: none;
 	border: none;
+}
+.chanmo-sched {
+	text-align: center;
+	font-size: 16px;
+	color: #5E4C44;
+	line-height: 30px;
+	margin-top: 35px;
+}
+.chanmo-sched ul {
+	list-style: none;
 }
