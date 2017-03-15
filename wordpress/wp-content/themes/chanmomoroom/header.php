@@ -27,21 +27,22 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'chanmomoroom' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="top-message">
-			<div class="wrap-top-message">
-				<p>佐世保市ネイルサロンchan_momo_room</p>
+		<div class="heading-cover">
+			<div class="top-message">
+				<div class="wrap-top-message">
+					<p>佐世保市ネイルサロンchan_momo_room</p>
+				</div>
 			</div>
+
+			<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
 		</div>
-
-		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-
-		<?php if ( has_nav_menu( 'top' ) ) : ?>
-			<div class="navigation-top">
-				<div class="wrap">
-					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-				</div><!-- .wrap -->
-			</div><!-- .navigation-top -->
-		<?php endif; ?>
+			<?php if ( has_nav_menu( 'top' ) ) : ?>
+				<div class="navigation-top">
+					<div class="wrap">
+						<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+					</div><!-- .wrap -->
+				</div><!-- .navigation-top -->
+			<?php endif; ?>
 
 	</header><!-- #masthead -->
 

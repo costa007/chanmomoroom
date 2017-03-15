@@ -612,3 +612,25 @@ function custom_settings_page_setup() {
 
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
+
+// Recent posts
+function my_recent_posts_shortcode($atts){
+ $q = new WP_Query(
+   array( 'orderby' => 'date', 'posts_per_page' => '4')
+ );
+
+$list = '<ul class="recent-posts">';
+
+while($q->have_posts()) : $q->the_post();
+
+ $list .= '<li>' . '<a href="' . get_permalink() . '">'. get_the_date(Y.".".m.".".d) . '<span>' . get_the_excerpt() . '</span>' . '</a>' . '</li>';
+
+endwhile;
+
+wp_reset_query();
+
+return $list . '</ul>';
+
+}
+
+add_shortcode('recent-posts', 'my_recent_posts_shortcode');

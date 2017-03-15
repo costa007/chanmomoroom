@@ -3252,7 +3252,7 @@ object {
 	}
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 49em) {
 
 	/* Typography */
 
@@ -3376,7 +3376,7 @@ object {
 		font-size: 14px;
 		font-size: 0.875rem;
 		left: 0;
-/*		position: absolute;*/
+		position: absolute;
 		right: 0;
 		width: 100%;
 		z-index: 3;

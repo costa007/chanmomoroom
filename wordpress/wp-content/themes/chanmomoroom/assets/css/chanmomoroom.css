@@ -1,13 +1,15 @@
 body {
-	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+	font-family:'游ゴシック';を指定
+/*	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;*/
 }
 
 /*-----------------HEADER-----------------*/
-#masthead{
+#masthead .heading-cover {
 	background-image: url("../images/header_bg.png");
-	background-size: 100%; 
+	background-size: 100% 100%;
+	height: 212px; 
 }
-.top-message {
+.page-id-14 .top-message {
 	background-image: url("../images/header_topbg.png");
 	background-size: 100%; 
 	background-repeat: no-repeat;
@@ -51,7 +53,44 @@ ul#top-menu,
 	font-size: 12px;
 	color: #5E4C44;
 	font-style: italic;
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;*/
 }
+#top-menu a span {
+	font-family: 'YuGothic-Regular';
+	font-style: normal;
+}
+.page-id-24 a.custom-logo-link,
+.page-id-20 a.custom-logo-link,
+.page-id-22 a.custom-logo-link,
+.page-id-18 a.custom-logo-link,
+.page-id-16 a.custom-logo-link {
+	margin-left: 0%;
+}
+.page-id-24 .top-message,
+.page-id-20 .top-message,
+.page-id-22 .top-message,
+.page-id-28 .top-message,
+.page-id-16 .top-message {
+	background: none;
+	height: auto;
+}
+.page-id-24 .wrap-top-message,
+.page-id-20 .wrap-top-message,
+.page-id-22 .wrap-top-message,
+.page-id-18 .wrap-top-message,
+.page-id-16 .wrap-top-message {
+	padding-bottom: 1em;
+	padding-top: 0;
+}
+
+.page-id-24 #masthead .heading-cover,
+.page-id-20 #masthead .heading-cover,
+.page-id-22 #masthead .heading-cover,
+.page-id-18 #masthead .heading-cover,
+.page-id-16 #masthead .heading-cover {
+	height: 159px;
+}
+
 
 /*-----------------CONTENT-----------------*/
 .panel-image {
@@ -113,7 +152,7 @@ header.entry-header {
 }
 .entry-content a, .entry-content a:hover,
 .entry-content a img, .widget a img {
-	box-shadow: none;
+	box-shadow: none !important;
 }
 .point-btn {
 	text-align: center;
@@ -130,7 +169,7 @@ header.entry-header {
 	margin: 0 auto;
 }
 .social-content {
-	padding: 50px 0;
+	padding: 50px 65px;
 }
 .social-main {
 	float: left;
@@ -154,7 +193,7 @@ header.entry-header {
 	padding-bottom: 15px;
 }
 .news-box-header {
-	width: 200px;
+	width: 170px;
 	margin: 0 auto;
 }
 .chanmo-normal.nail-art img {
@@ -167,8 +206,8 @@ header.entry-header {
 	padding: 50px 0;
 }
 .flower-nail {
-	background-image: url(../images/top_news_bg.png);
-	background-size: 100%;
+	background-image: url(../images/top_news_bg2.png);
+	background-size: 100% 100%;
 	height: 508px;
 }
 .flower-nail .news-box p {
@@ -177,6 +216,48 @@ header.entry-header {
 }
 .panel-content .entry-header {
 	margin: 0;
+}
+.top-posts {
+	width: 800px;
+	margin: 30px auto 0;
+	text-align: center;
+}
+.top-posts ul {
+	list-style: none;
+}
+.page-two-column .panel-content .recent-posts {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+.top-posts ul li a span {
+	margin-left: 3%;
+}
+.top-posts ul li:after {
+	content: "";
+	border: 1px solid #fff;
+	display: block;
+	width: 30%;
+	margin: 2% auto;
+}
+.top-posts ul li:last-child:after {
+	border: none;
+}
+.page-id-14 .chanmo-normal .flower-back {
+	margin-top: -21%;
+}
+.blank-box {
+	background-color: #adadad;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.blank-box img {
+	margin-top: 55%;
+}
+.social-blog-box img {
+	height: 177px;
+	width: 100%;
 }
 
 /*About Page*/
@@ -299,6 +380,12 @@ header.entry-header {
 }
 .menu-list ul li span {
 	float: right;
+}
+img.alignnone.size-full.wp-image-103 {
+	width: 198px;
+}
+img.alignnone.size-full.wp-image-102 {
+	width: 162px;
 }
 img.alignnone.size-full.wp-image-108 {
 	width: 128px;
@@ -444,7 +531,7 @@ img.alignnone.size-full.wp-image-108 {
 .contact-main-content table tr:last-child td:first-child label {
 	height: 261px;
 }
-.contact-main-content table tr:last-child th label span {
+.contact-main-content table tr:last-child td label span {
 	display: block;
 }
 .contact-main-content p {
@@ -526,11 +613,58 @@ img.alignnone.size-full.wp-image-108 {
 
 /*======================RESPONSIVE=======================*/
 @media screen and (max-width: 767px) {
+	.page-id-24 #masthead .heading-cover,
+	.page-id-20 #masthead .heading-cover,
+	.page-id-22 #masthead .heading-cover,
+	.page-id-18 #masthead .heading-cover,
+	.page-id-16 #masthead .heading-cover {
+		height: 99px;
+	}
+	.page-id-24 .site-branding .wrap,
+	.page-id-20 .site-branding .wrap,
+	.page-id-22 .site-branding .wrap,
+	.page-id-18 .site-branding .wrap,
+	.page-id-16 .site-branding .wrap {
+		 width: 90%;
+	}
+	#masthead .heading-cover {
+		height: auto;
+	}
+	a.custom-logo-link {
+		margin-left: 38%;
+		width: 70%;
+		margin-top: 2%;
+	}
+	.chan-contact {
+		margin-top: 2%;
+	}
+	.site-branding .wrap {
+		padding: 0;
+	}
+	.top-message {
+		height: auto;
+	}
 	#top-menu li {
 		margin: 0 auto;
 	}
 	.custom-header {
 		height: 0 !important;
+	}
+	.chanmo-wrap {
+		max-width: 100%;
+	}
+	.foot-contact {
+		width: 90%;
+		text-align: center;
+	}
+	.wrap-top-message {
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.page-id-14 .top-message {
+		background-size: 100% 100%;
+		height: auto;
 	}
 /*	.navigation-top {
 		background-color: rgba(255,255,255,0.5);
@@ -539,10 +673,13 @@ img.alignnone.size-full.wp-image-108 {
 	.wrap-top-message {
 		padding-top: 0.3em;
 	}
-	.points,
-	.flower-nail .news-box p {
+	.points {
 		width: 90%;
 		margin: 0 auto;
+	}
+	.top-posts {
+		width: 90%;
+		margin: 3% auto 0;
 	}
 	.social-main {
 		float: none;
@@ -558,6 +695,12 @@ img.alignnone.size-full.wp-image-108 {
 	.widget {
 		padding-bottom: 0;
 	}
+	.point-btn {
+		width: 65%;
+	}
+	.news-box-header {
+		width: 20%;
+	}
 
 	/*------About------*/
 	.about-content h1 {
@@ -565,8 +708,8 @@ img.alignnone.size-full.wp-image-108 {
 		font-size: 1.3em;
 	}
 	.page-id-16 .chanmo-normal {
-		background-size: 100% 77%;
-		background-position-y: 87%;
+		background-size: 100% 82%;
+		background-position-y: 100%;
 	}
 	.about-content p {
 		text-align: left;
@@ -576,10 +719,164 @@ img.alignnone.size-full.wp-image-108 {
 		margin-top: 7%;
 		height: auto;
 	}
+	.about-head-image {
+		width: 90%;
+	}
+	.about-content,
+	.about-box-content {
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+	}
 
 	/*------Menu------*/
 	.menu-content {
 		width: 90%;
 		margin: 0 auto;
+	}
+	.menu-header:before,
+	.menu-header:after {
+		width: 33%;
+		overflow: hidden;
+	}
+	.menu-list {
+		width: 45%;
+	}
+
+	/*------Q&A------*/
+	.qa-content {
+		width: 90%;
+	}
+
+	/*------Access------*/
+	.access-content,
+	.access-heading,
+	.access-contact,
+	.contact-reminder/*Contact*/ {
+		width: 90%;
+	}
+	.contact-reminder {
+		text-align: left;
+	}
+
+	/*Contact*/
+	.contact-main-content table tr:last-child td:first-child label {
+		height: auto;
+	}
+	.contact-main-content {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.page-id-24 #masthead .heading-cover,
+	.page-id-20 #masthead .heading-cover,
+	.page-id-22 #masthead .heading-cover,
+	.page-id-18 #masthead .heading-cover,
+	.page-id-16 #masthead .heading-cover {
+		height: 77px;
+	}
+	/*TOP Page*/
+	.point-box {
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.point-box:nth-child(2) {
+		margin-top: 0;
+	}
+	.point-box:last-child {
+		margin: 0 auto;
+	}
+	.point-btn {
+		width: 90%;
+	}
+	.social-main {
+		width: 80%;
+	}
+	.flower-nail {
+		height: auto;
+	}
+	.news-box-header {
+		width: 32%;
+	}
+	.chan-contact {
+		margin-right: 2%;
+	}
+
+	/*About Page*/
+	.about-content p {
+		width: 90%;
+		margin: 0 auto 10%;
+	}
+	.aboutbox-image1,
+	.aboutbox-image2,
+	.aboutbox-detail1,
+	.aboutbox-detail2 {
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.aboutbox-detail1 p {
+		margin: 3% 0;
+	}
+	.aboutbox-image2 img {
+		position: static;
+		margin: 5% 0;
+	}
+	.aboutbox-detail2 p {
+		float: none;
+	}
+	.point-box p {
+		text-align: left;
+	}
+
+	/*Menu Page*/
+	.menu-header:before, .menu-header:after {
+		width: 17%;
+	}
+	.menu-list {
+		width: 90%;
+	}
+
+	/*Contact Page*/
+	.contact-main-content table tr td:first-child {
+		width: 100%;
+	}
+	.contact-main-content table tr td {
+		display: block;
+		padding: 1% 0;
+	}
+	.contact-main-content table tr:last-child td label span {
+		display: inline;
+	}
+}
+@media screen and (max-width: 375px) {
+	.page-id-20 .chan-title,
+	.page-id-22 .chan-title,
+	.page-id-24 .chan-title,
+	.page-id-18 .chan-title,
+	.page-id-16 .chan-title {
+		width: 70%;
+	}
+	.page-id-20 .chan-contact,
+	.page-id-22 .chan-contact,
+	.page-id-24 .chan-contact,
+	.page-id-18 .chan-contact,
+	.page-id-16 .chan-contact {
+		width: 27%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.news-box-header {
+		width: 43%;
+	}
+	.ques-part p:after {
+		width: 45%;
+	}
+	.chan-contact {
+		margin-top: 1%;
+		margin-right: 3%;
 	}
 }
